@@ -1,3 +1,11 @@
+# This program is meant to loop through all finder files that are to be uploaded to Filemaker.
+# As loading finder files is not my primary responsibility, I try to pick the LARGEST files to upload. This is to clear
+# out the 'big boys' and perform my normal job while these load in the background for 1-2 hours.
+# This program does the following:
+# 1) It captures the number of files for a client (the first two characters of the filename)
+# 2) It capture the total file size of these files
+# 3) It sorts these by file size in descending order
+
 import os
 from prettytable import PrettyTable
 
